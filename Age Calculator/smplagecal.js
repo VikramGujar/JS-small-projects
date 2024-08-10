@@ -12,14 +12,14 @@ function calculate() {
         let ageInYears = ageInMonths / 12;
 
         ageInMonths %= 12;
-        ageInDays %= 30;
+        ageInDays %= 30.4375;
 
         let years = Math.floor(ageInYears);
         let months = Math.floor(ageInMonths);
         let days = Math.floor(ageInDays);
-        let hours = Math.floor(ageInHrs);
-        let minutes = Math.floor(ageInMins);
-        let seconds = Math.floor(ageInS);
+        let hours = Math.floor(ageInHrs % 24);
+        let minutes = Math.floor(ageInMins % 60);
+        let seconds = Math.floor(ageInS % 60);
 
         document.querySelector('#years').innerHTML = years + " years";
         document.querySelector('#months').innerHTML = months + " months";
@@ -34,4 +34,3 @@ function calculate() {
 function reset() {
     window.location.reload();
 }
-

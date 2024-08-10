@@ -13,13 +13,15 @@ body{
 
 h1{
     text-align: center;
+    position: relative;
+    top: 100px;
 }
 
 .container{
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     padding: 20px;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 150px 20px;
     width: 400px;
     box-shadow: 5px 15px 30px rgba(128, 128, 128, 0.384);
 }
