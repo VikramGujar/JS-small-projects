@@ -1,0 +1,19 @@
+button{
+    padding: 10px 23px;
+   margin-left: 400px;
+   border-radius: 4px;
+   border: 1px solid cyan;
+   background-color: #007bff;
+   color: black;
+   transition: all 400ms;
+}
+button:hover{
+    color: white;
+    box-shadow: 0 0 30px #007bff;
+   border: none;
+   border-radius: 24px;
+}
+h1{
+    margin-top: 20%;
+    margin-left: 50%;
+}

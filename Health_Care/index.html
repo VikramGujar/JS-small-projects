@@ -1,0 +1,68 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Alignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="formhead">
+                <div class="img">
+                    <img src="doctor.png" alt="Image">
+                </div>
+                <div class="text">
+                    <h1>New Patient Enrollment</h1>
+                </div>
+            </div>
+            <form action="http://localhost:5000/predict" method="post">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+    
+                <label for="gender">Gender:</label>
+                <input type="number" id="gender" name="gender" placeholder="0 for Female, and 1 for Male" required>
+    
+                </select>
+    
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+    
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+    
+                <label for="cholesterol">Cholesterol (mg/dL):</label>
+                <input type="number" id="cholesterol" name="cholesterol" required>
+    
+                <label for="glucose">Glucose (mg/dL):</label>
+                <input type="number" id="glucose" name="glucose" required>
+    
+                <label for="smoker">Smoker:</label>
+                <input type="number" id="smoker" name="smoker" placeholder="0 for No, and 1 for Yes" required>
+    
+                </select>
+    
+                <label for="exercise">Exercise (hours/week):</label>
+                <input type="number" id="exercise" name="exercise" required>
+    
+                <label for="systolic">Systolic:</label>
+                <input type="number" id="systolic" name="systolic" required>
+    
+                <label for="diastolic">Diastolic:</label>
+                <input type="number" id="diastolic" name="diastolic" required>
+    
+                <input type="submit" value="Submit">
+    
+                <div>
+                    <center>
+                        <h2 id="predict" name="predict">{{ output }}</h2>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

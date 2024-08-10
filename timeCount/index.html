@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time count</title>
+    <style>
+        body {
+            background: #bdc3c7;
+            background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+           
+
+        }
+
+        h1 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            font-size: 4rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1 id="count">10</h1>
+    </div>
+    <script>
+        let countElement = document.getElementById('count')
+        console.log(countElement);
+
+        console.log(countElement.innerHTML);
+
+        let initialCountVal = countElement.innerHTML;
+
+        setInterval(function () {
+            initialCountVal = initialCountVal > 0 ? initialCountVal -= 1 : 0;
+            countElement.innerHTML = initialCountVal;
+        }, 1000);
+    </script>
+</body>
+
+</html>
