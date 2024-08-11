@@ -1,0 +1,185 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+#landing {
+    background: url('https://img.freepik.com/free-vector/blue-data-technology-background-vector-with-binary-code_53876-110871.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+#landing {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left-section {
+    padding-left: 4rem;
+    align-items: flex-start;
+}
+
+.left-section h1 {
+    font-size: 4rem;
+    color: #61dafb;
+    margin-bottom: 2rem;
+}
+
+.left-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.left-section button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-section button:hover {
+    background-color: #21a1f1;
+}
+
+.right-section {
+    text-align: center;
+}
+
+.photo-container {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    transition: transform 0.8s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.react-icon {
+    background-image: url('react-icon.png');
+    top: -30px;
+    left: -30px;
+    transform: translate(-50%, -50%);
+}
+
+.js-icon {
+    background-image: url('js-icon.png');
+    top: -30px;
+    right: -30px;
+    transform: translate(50%, -50%);
+}
+
+.java-icon {
+    background-image: url('java-icon.png');
+    bottom: -30px;
+    right: -30px;
+    transform: translate(50%, 50%);
+}
+
+.coding-icon {
+    background-image: url('node-icon.png');
+    bottom: -30px;
+    left: -30px;
+    transform: translate(-50%, 50%);
+}
+
+
+.profile-photo:hover ~ .icon {
+    opacity: 1;
+    transform: scale(1.5);
+    animation: move-icon 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes move-icon {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.typing-effect {
+    font-size: 2.5rem;
+    margin-bottom: 12rem;
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    animation: typing 3.5s steps(30) infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 100%; border-color: transparent; }
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: -10rem;
+    padding: 0 2rem;
+}

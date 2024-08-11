@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #201E43;
+    --secondary-color: #134B70;
+    --accent-color: #508C9B;
+    --text-color: #EEEEEE;
+    --clor-light: #0ef;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+}
+.logo{
+    display: flex;
+}
+.logo img {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+.logo h1:hover{
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav ul li:hover a{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+/* Project section styles */
+#projects {
+    background-color: var(--secondary-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    color: var(--clor-light);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width:40vw;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 a {
+    color: var(--clor-light);
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
