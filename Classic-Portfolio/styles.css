@@ -2,13 +2,14 @@
     --bg-color: #000;
     --text-color: #fff;
     --accent-color: #888;
+    --primary-color: #ff5722;
+    --hover-color: #ff8a50;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: rgb(107,108,108);
-    background: linear-gradient(90deg, rgba(107,108,108,1) 7%, rgba(62,62,62,1) 49%, rgba(32,32,32,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 7%, rgb(28, 28, 28) 49%, rgb(41, 41, 41) 100%);
     color: var(--text-color);
     background-size: 200% 200%;
     animation: gradient-animation 6s ease infinite;
@@ -31,7 +32,8 @@ body {
     height: 100vh;
 }
 
-.left-part, .right-part {
+.left-part,
+.right-part {
     flex: 1;
     padding: 20px;
 }
@@ -40,7 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .left-part .photo {
@@ -53,7 +56,7 @@ body {
     width: 100%;
     height: 200px;
     position: relative;
-    bottom: 85px;
+    bottom: 60px;
 }
 
 .lotify {
@@ -68,16 +71,17 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 70px;
+    bottom: 50px;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
 }
 
 h2 {
     font-size: 2em;
+    color: var(--primary-color);
 }
 
 p {
@@ -86,26 +90,28 @@ p {
 }
 
 .social-icons {
-    position: absolute;
-    bottom: 100px;
-    left: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icons i {
-    margin-right: 10px;
+    margin: 0 40px;
     color: #c9c5ce;
     font-size: 40px;
 }
-.social-icons i:hover{
-    transition-duration: .5s;
-    color: #000;
+
+.social-icons i:hover {
+    transition-duration: 0.5s;
+    color: var(--primary-color);
 }
+
 .right-part {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 nav ul {
@@ -113,52 +119,54 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 nav ul li {
-    
     margin: 0 15px;
+    padding: 8px 0;
+    
 }
 
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
-    padding: 6px 9px;
+    border-radius: 40px;
+    padding: 20px;
     background-color: var(--accent-color);
+    transition: background-color 0.3s ease;
 }
-nav ul li:hover a{
-    background-color: var(--text-color);
+
+nav ul li:hover a {
+    background-color: var(--primary-color);
     color: var(--bg-color);
-    transition-duration: .8s;
+    transition-duration: 0.8s;
+    
 }
+
 .content {
-    margin-top: 100px;
-    border: dashed 1px white;
-    border-radius: 0 40px 0 40px; 
-    padding: 0 100px;
-    padding-bottom: 20px;   
+    margin-top: 50px;
+    border-radius: 0 40px 0 40px;
+    padding: 60px 100px;
+    max-width: 800px;
+    background-color: #000;
 }
 
 .profile-image {
-    width: 300px;
-    height: 300px;
-    /* border: dashed white 1px; */
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    filter: drop-shadow(5px 5px 4px grey);
-    /* background: linear-gradient(90deg, lightgrey, black, grey); */
-    /* background-size: 300% 300%; */
-    /* animation: gradient-animation 60s ease infinite; */
+    margin-bottom: 10px;
 }
-
 .typing-effect {
     font-size: 1.5em;
-    margin: 20px 0;
+    margin: 15px 0;
     border-right: 2px solid var(--accent-color);
     white-space: nowrap;
     overflow: hidden;
-    width: 14ch;
-    animation: typing 6s steps(14) infinite alternate, blink 0.5s step-end infinite;
+    width: 20ch; /* Set the width to the longest string, "I am Developer" is 16 characters long */
+    animation: typing 9s steps(20) infinite alternate, blink 0.8s step-end infinite;
 }
 
 @keyframes typing {
@@ -166,13 +174,13 @@ nav ul li:hover a{
         width: 0ch;
     }
     25% {
-        width: 11ch; /* 'I am Vikram' width */
+        width: 10ch; /* 'I am Vikram' is 11 characters long */
     }
     50% {
         width: 0ch;
     }
     75% {
-        width: 24ch; /* 'I am a Developer' width */
+        width: 20ch; /* 'I am Developer' is 16 characters long */
     }
     100% {
         width: 0ch;
@@ -188,17 +196,55 @@ nav ul li:hover a{
     }
 }
 
+
 .buttons .btn {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     border: none;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
     color: var(--text-color);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
 }
 
 .buttons .btn:hover {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-part,
+    .right-part {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .content {
+        padding: 20px;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
