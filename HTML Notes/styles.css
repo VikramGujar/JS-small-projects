@@ -1,0 +1,284 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4A90E2; /* Sky Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #F5A623; /* Orange */
+    border-bottom: 2px solid #F5A623;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.important {
+    color: #27AE60; /* Green */
+    font-weight: bold;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Web Introduction Section Styles */
+.web-introduction {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.web-introduction h2 {
+    color: #4A90E2; /* Sky Blue */
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+}
+
+.web-introduction h3 {
+    color: #F5A623; /* Orange */
+    margin-top: 20px;
+}
+
+.web-introduction p, .web-introduction ul, .web-introduction ol {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.web-introduction ul, .web-introduction ol {
+    padding-left: 20px;
+}
+
+.web-introduction li {
+    margin-bottom: 10px;
+}
+
+.web-introduction strong {
+    color: #27AE60; /* Green */
+}
+
+
+/* Server Types Section Styles */
+.server-types {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.server-types h2 {
+    color: #4A90E2; /* Sky Blue */
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+}
+
+.server-types h3 {
+    color: #F5A623; /* Orange */
+    margin-top: 20px;
+}
+
+.server-types p, .server-types ul, .server-types ol {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.server-types ul, .server-types ol {
+    padding-left: 20px;
+}
+
+.server-types li {
+    margin-bottom: 10px;
+}
+
+.server-types strong {
+    color: #27AE60; /* Green */
+}
+
+
+/* Website vs Web Application Section Styles */
+.website-vs-webapp {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.website-vs-webapp h2 {
+    color: #4A90E2; /* Sky Blue */
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+}
+
+.website-vs-webapp h3 {
+    color: #F5A623; /* Orange */
+    margin-top: 20px;
+}
+
+.website-vs-webapp p, .website-vs-webapp ul, .website-vs-webapp ol {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.website-vs-webapp ul, .website-vs-webapp ol {
+    padding-left: 20px;
+}
+
+.website-vs-webapp li {
+    margin-bottom: 10px;
+}
+
+.website-vs-webapp strong {
+    color: #27AE60; /* Green */
+}
+
+
+
+/* Create Project Section Styles */
+.create-project {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.create-project h2 {
+    color: #4A90E2; /* Sky Blue */
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+}
+
+.create-project h3 {
+    color: #F5A623; /* Orange */
+    margin-top: 20px;
+}
+
+.create-project p, .create-project ul, .create-project ol, .create-project pre {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.create-project ul {
+    padding-left: 20px;
+}
+
+.create-project li {
+    margin-bottom: 10px;
+}
+
+.create-project code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #d14;
+}
+
+.create-project pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+
+
+/* HTML Introduction Section Styles */
+.html-introduction {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.html-introduction h2 {
+    color: #4A90E2; /* Sky Blue */
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+}
+
+.html-introduction h3 {
+    color: #F5A623; /* Orange */
+    margin-top: 20px;
+}
+
+.html-introduction h4 {
+    color: #F5A623; /* Orange */
+    margin-top: 10px;
+}
+
+.html-introduction p, .html-introduction ul, .html-introduction ol {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.html-introduction ul, .html-introduction ol {
+    padding-left: 20px;
+}
+
+.html-introduction li {
+    margin-bottom: 10px;
+}
+
+.html-introduction code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #d14;
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #4A90E2; /* Sky Blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
