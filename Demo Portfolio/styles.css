@@ -19,8 +19,9 @@ body {
     padding: 15px;
     text-align: center;
     position: fixed;
-    width: 100%;
+    width: 80%;
     top: 0;
+    right: 0;
     z-index: 1000;
 }
 
@@ -45,6 +46,92 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+
+.info-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100vh; /* 100vh for 100% viewport height */
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: sticky; /* Make the info bar sticky */
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.profile-pic {
+    width: 210px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 10px 30px;
+    
+}
+
+.info-bar h2, .info-bar p {
+    color: black;
+    margin-bottom: 0px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    margin: 10px 10px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.social-icons i:hover {
+    transition-duration: 0.5s;
+    color:orange;
+}
+
+.info-bar ul {
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-bar ul li {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.info-bar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.skills-container {
+    color: black;
+    margin-top: 20px;
+}
+
+.skill-list {
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    color: black;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-list li:last-child {
+    color: black;
+    margin-bottom: 0;
+}
+
 
 /* Landing Section */
 .landing {
