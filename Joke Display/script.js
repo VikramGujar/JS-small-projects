@@ -8,7 +8,7 @@ function fetchData() {
         .then(data => {
             console.log(data);
             myData = data;
-            displaySetup(); // Display the first setup immediately
+            displaySetup(); 
         })
         .catch(err => console.log(err));
 }
@@ -16,7 +16,7 @@ function fetchData() {
 fetchData();
 
 function displaySetup() {
-    mainDiv.textContent = ''; // Clear previous content
+    mainDiv.textContent = ''; 
     if (currentIndex < myData.length) {
         const joke = myData[currentIndex];
 
@@ -40,7 +40,7 @@ function displayPunchline() {
         punchlinee.textContent = "😂"+`${joke.punchline}`+"😂";
         mainDiv.appendChild(punchlinee);
 
-        currentIndex++; // Move to the next joke
+        currentIndex++; 
 
         button.textContent = "Next Joke";
         button.onclick = displaySetup;
