@@ -33,9 +33,9 @@
                 <h2>Vikram Gujar</h2>
                 <p>Full Stack Developer</p>
                 <div class="skills">
-                    <h2>My Skills</h2>
+                    <h2 style="margin-left:50px;">My Skills</h2>
 
-                    <div class="skill">
+                    <div class="skill dir-reverse">
                         <h3>Programming Languages:</h3>
                         <p>
                             <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat&logo=java&logoColor=white"
@@ -47,7 +47,7 @@
                         </p>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill dir-alternate">
                         <h3>Frontend Development:</h3>
                         <p>
                             <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat&logo=html5&logoColor=white"
@@ -63,7 +63,7 @@
                         </p>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill dir-reverse">
                         <h3>Backend Development:</h3>
                         <p>
                             <img src="https://img.shields.io/badge/Node.js-339933.svg?style=flat&logo=node.js&logoColor=white"
@@ -73,7 +73,7 @@
                         </p>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill dir-alternate">
                         <h3>Database Management:</h3>
                         <p>
                             <img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=flat&logo=mongodb&logoColor=white"
@@ -83,7 +83,7 @@
                         </p>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill dir-reverse">
                         <h3>Version Control:</h3>
                         <p>
                             <img src="https://img.shields.io/badge/Git-F05032.svg?style=flat&logo=git&logoColor=white"
@@ -93,7 +93,7 @@
                         </p>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill dir-alternate">
                         <h3>Other Tools:</h3>
                         <p>
                             <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078D4.svg?style=flat&logo=visual-studio-code&logoColor=white"
@@ -119,21 +119,17 @@
                 </div>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/vikram-gujar-063614206/" target="_blank"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://github.com/VikramGujar" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            class="fa-brands fa-github ic"></i></a>
+                    <a href="https://github.com/VikramGujar" target="_blank"><i
+                            class="fa-brands fa-linkedin ic"></i></a>
                     <a href="https://www.instagram.com/vikram_gujar_vg/" target="_blank"><i
-                            class="fa-brands fa-square-instagram"></i></a>
+                            class="fa-brands fa-square-instagram ic"></i></a>
                 </div>
             </div>
             <div class="right">
                 <div class="content">
                     <img src="grey-bg-profile.png" alt="Vikram Gujar" class="profile-image">
-                    <h2>Introducing Me</h2>
-                    <h3 class="typing-effect">
-                        <span class="text-1">I am Vikram |</span>
-                        <span class="text-2">Developer</span>
-                    </h3>
-    
+                    <h2>I am <span id="element"></span></h2>
                     <div class="buttons">
                         <button class="btn">Hire Me</button>
                         <button class="btn">About Me</button>
@@ -147,16 +143,65 @@
 
     </div>
     </section>
-    </div>
 
-    </div>
+    <section id="about">
+        <h1 class="heading">About Me</h1>
+        <div class="about-main">
+
+            <div class="about-info">
+
+                <div class="intro">
+                    <h2>Introduction</h2>
+                <p>Hello, I'm Vikram Gujar, a passionate full-stack Java developer with a strong foundation in various
+                    programming languages, including Java, C, C++, HTML, CSS, JavaScript, React, Node.js, and
+                    Express.js. I graduated with a Bachelor of Computer Applications (BCA) degree in 2024, and I have
+                    been dedicated to creating innovative solutions and building web applications that not only meet
+                    user needs but also push the boundaries of technology.</p>
+                </div>
+
+                <div class="prof-jrny">
+                   
+                    <h2>Professional Journey</h2>
+                    <p>My professional journey began during my academic years, where I developed a deep interest in software
+                        development. My skills in both frontend and backend technologies have allowed me to work on diverse
+                        projects, including the creation of an e-commerce website, a project showcase platform, and a
+                        motivational quotes library. I am particularly proficient in Java, which I use extensively for
+                        backend development, but I also enjoy working with JavaScript and its frameworks to create dynamic
+                        and responsive user interfaces.</p>
+
+                </div>
+                
+                <div class="achiv">
+                    
+                    <h2>Achievements</h2>
+                    <p>Throughout my academic and professional career, I've consistently sought opportunities to expand my
+                        knowledge and skills. My notable achievements include:</p>
+                    <ul>
+                        <li>Completing a successful project showcasing various electronic devices (ElectronicHUB) as part of
+                            my final year BCA project.</li>
+                        <li>Creating a well-structured and informative GitHub profile README that has been praised for its
+                            clarity and design.</li>
+                        <li>Developing an animated and interactive tribute page for Tony Stark (Iron Man) that highlights my
+                            creativity and attention to detail.</li>
+                    </ul>
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+
+    </section>
 
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Vikram Gujar. All rights reserved.</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.js"
+        integrity="sha512-FSNQjUUq97PtDnAJyMlBTH8EhV4o5X5FLVbzS9ttrdEVVbmrssJBh/PgXFQbxS+6yYx5n5irOj7de6Th0TRQZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
